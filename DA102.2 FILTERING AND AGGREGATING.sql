@@ -2,8 +2,9 @@
 How has the revenue of Instagram changed over the 
 years? Provide a summary of total revenue per year 
 for Instagram.*/
+--SOLUTION 
 SELECT PARENT_COMPANY,
-				YEARS,
+			 YEARS,
 			 SUM(revenue) AS total_revenue
 FROM meta_revenue
 WHERE PARENT_COMPANY = 'Instagram'
